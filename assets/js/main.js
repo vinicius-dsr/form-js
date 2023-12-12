@@ -8,26 +8,24 @@ function validate() {
 
   sendBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    if (
-      name.value == "" || email.value == "" || msg.value == ""
-      ) {
-        emptyerror();
-      } else {
-        sendmail(name.value, email.value, msg.value);
-        success();
-      }
+    if (name.value == "" || email.value == "" || msg.value == "") {
+      emptyerror();
+    } else {
+      sendmail(name.value, email.value, msg.value);
+      success();
+    }
   });
 }
 
 validate();
 
 function sendmail(name, email, msg) {
-  emailjs.send("service_76p0m0o", "template_nv97k5j", {
+  emailjs.send("service_76p0m0o", "template_a81rtf5", {
     from_name: name,
-    to_name: "Vinícius",
+    to_name: email,
     message: msg,
   });
-} 
+}
 
 function emptyerror() {
   swal({
