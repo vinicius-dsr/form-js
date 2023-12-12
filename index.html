@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Email JS</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fivicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Link css -->
+  <link rel="stylesheet" href="assets/styles/styles.css">
+
+</head>
+<body>
+  <section class="form-js container">
+    <h3>Formulário de Contato &#129312</h3>
+    <form action="" class="contact-form" id="contact-form">
+      <label for="name">Nome:</label>
+      <input type="text" name="name" id="name" class="name" placeholder="Qual seu nome?">
+      
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" class="email" placeholder="Digite seu email aqui...">
+
+      <label for="message">Mensagem:</label>
+      <textarea name="message" id="message" class="message" cols="30" rows="05" placeholder="Digite aqui sua mensagem..."></textarea>
+
+      <input type="submit" value="Enviar" class="send-btn" />
+    </form>
+  </section>
+
+      <!-- Email JS -->
+      <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("YgR-T2izg5tlhuYhD");
+      })();
+    </script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
