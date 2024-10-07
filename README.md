@@ -14,7 +14,7 @@ Criar uma forma de enviar formulários de maneira dinâmica e eficiente utilizan
 - JavaScript
 - EmailJS
 - HTML
-- CSS (opcional)
+- CSS
 
 ## Como usar
 1. Configure sua conta no EmailJS e obtenha as credenciais necessárias.
